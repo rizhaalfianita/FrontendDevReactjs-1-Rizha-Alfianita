@@ -7,7 +7,7 @@ export const CustomSelect = ({
   selected,
 }) => {
   return (
-    <div className="border-b-1 border-lightGray pb-0.5">
+    <div className="border-b-1 border-lightGray pb-0.5 max-sm:text-base">
       <select
         className="focus:outline-none px-2"
         value={selected}

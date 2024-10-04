@@ -30,11 +30,13 @@ export const Detail = () => {
       <img
         src={imageApiURl + detailResto.pictureId}
         alt=""
-        className="h-96 w-full object-cover z-0"
+        className="h-96 w-full object-cover max-sm:h-64"
       />
       <div className="py-16 w-10/12 mx-auto font-poppins text-softBlack">
         <div className="flex justify-between">
-          <h2 className="text-3xl mb-8 font-medium">{detailResto.name}</h2>
+          <h2 className="text-3xl mb-8 font-medium max-sm:text-2xl">
+            {detailResto.name}
+          </h2>
           <div className="flex gap-x-1">
             {stars.map((_, index) => (
               <DynamicStar
@@ -44,12 +46,19 @@ export const Detail = () => {
             ))}
           </div>
         </div>
-        <p className="text-justify mb-8">{detailResto.description}</p>
-        <h3 className="font-medium text-lg mb-3">Categories</h3>
+        <p className="text-justify mb-8 max-sm:text-sm">
+          {detailResto.description}
+        </p>
+        <h3 className="font-medium text-lg mb-3 max-sm:text-base">
+          Categories
+        </h3>
         <div className="flex gap-x-2.5 mb-10">
           {detailResto.categories && detailResto.categories.length > 0 ? (
             detailResto.categories.map((category) => (
-              <p key={category.id} className="px-5 py-0.5 bg-lightSky rounded">
+              <p
+                key={category.id}
+                className="px-5 py-0.5 bg-lightSky rounded max-sm:text-sm"
+              >
                 {category.name}
               </p>
             ))
@@ -57,7 +66,9 @@ export const Detail = () => {
             <p>No categories available</p>
           )}
         </div>
-        <h3 className="font-medium text-lg mb-6 mt-8">Review</h3>
+        <h3 className="font-medium text-lg mb-6 mt-8 max-sm:text-base">
+          Review
+        </h3>
 
         {loading ? (
           <p>Loading reviews...</p>

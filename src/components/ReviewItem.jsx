@@ -4,7 +4,7 @@ import { DynamicStar } from "./DynamicStar";
 export const ReviewItem = ({ customerReview }) => {
   const stars = Array(5).fill(0);
   return (
-    <div className="flex gap-x-4 font-poppins text-softBlack mb-6">
+    <div className="flex gap-x-4 font-poppins text-softBlack mb-6 max-sm:text-sm">
       <img
         src={customerReview.image}
         alt=""
