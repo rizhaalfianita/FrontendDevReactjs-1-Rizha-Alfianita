@@ -1,6 +1,6 @@
 # Overview
 
-This project was addressed to fullfill the techical test as Front End Developer (React JS).
+This project is addressed to fullfill the techical test as Front End Developer (React JS).
 
 ## Tech Stacks
 
