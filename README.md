@@ -19,9 +19,9 @@ Install all the dependecies used in the project.
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## How to Run
+## Authentication
 
-Authentication: Not Applicable (N/A)
+Not Applicable (N/A)
 - Username: N/A
 - Password: N/A
 
